@@ -1,0 +1,28 @@
+﻿<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite-3" verbose="1">
+  	<parameter name="title" value="SHOP"/>
+  	<parameter name="Browser" value="FireFox"/>
+ 	<test name="Test">
+ 	
+ 	
+ 	<packages>
+			<package name=".*" />
+		</packages>
+ 	
+	</test>
+</suite>
+ 
+ 
+ <!--  <packages>
+            <package name="com.disney.*"/>
+        </packages> -->
+        
+ <!-- <classes>
+
+<class name="com.disney.coding.Browser" />
+  
+
+</classes>  --> 
+ 	<!-- <packages>
+			<package name=".*" />
+		</packages> -->

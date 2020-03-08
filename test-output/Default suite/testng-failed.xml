@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="title" value="param-val-not-found"/>
+  <parameter name="Browser" value="param-val-not-found"/>
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.disney.coding.WelcomePage">
+        <methods>
+          <include name="createAccount"/>
+          <include name="closeOverlay"/>
+          <include name="ListDropDown"/>
+          <include name="selectSectionInfo"/>
+          <include name="loginUsingExcelData"/>
+          <include name="startDriver"/>
+          <include name="clickItem"/>
+          <include name="openDisneyHomePage"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.disney.coding.WelcomePage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

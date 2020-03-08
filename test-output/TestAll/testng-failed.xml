@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestAll]">
+  <test thread-count="5" name="order(failed)">
+    <parameter name="title" value="SHOP"/>
+    <classes>
+      <class name="com.disney.coding.Browser">
+        <methods>
+          <include name="clickItem" invocation-numbers="0"/>
+          <include name="getDriver"/>
+          <include name="closeOverlay"/>
+        </methods>
+      </class> <!-- com.disney.coding.Browser -->
+    </classes>
+  </test> <!-- order(failed) -->
+</suite> <!-- Failed suite [TestAll] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite-3]">
+  <parameter name="title" value="SHOP"/>
+  <parameter name="Browser" value="FireFox"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.disney.coding.WelcomePage2">
+        <methods>
+          <include name="loginUsingExcelData"/>
+          <include name="startDriver"/>
+        </methods>
+      </class> <!-- com.disney.coding.WelcomePage2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite-3] -->
