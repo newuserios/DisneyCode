@@ -1,5 +1,11 @@
 # DisneyCode Assignment
 
+ Dependencies:
+ use java 1.7 or above.
+ 
+ 
+
+
 
 Steps to run:
 
@@ -19,7 +25,7 @@ package com.disney.coding.coding - has welcome page.
 
 o/p:
 
-Once you run the project Events_items.xls,CompareXml.xml will be created under project root folder
+Once you run the project Events_items.xls,CompareXml.xml will be created under project root folder. 
 
 
 Note:
