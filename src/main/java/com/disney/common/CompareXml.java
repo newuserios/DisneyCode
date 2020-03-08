@@ -1,11 +1,7 @@
 package com.disney.common;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.Reader;
 import java.util.HashMap;
@@ -19,30 +15,14 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.custommonkey.xmlunit.DetailedDiff;
 import org.custommonkey.xmlunit.Diff;
 import org.custommonkey.xmlunit.Difference;
-import org.custommonkey.xmlunit.XMLUnit;
 import org.xml.sax.SAXException;
 
 public class CompareXml {
 	static HashMap<String, String> hm;
 
-	public static void main(String args[]) throws FileNotFoundException, SAXException, IOException {
 
-		FileInputStream fis1 = new FileInputStream(
-				System.getProperty("user.dir") + "/src/test/resources/XMLCompareFile1.xml");
-		FileInputStream fis2 = new FileInputStream(
-				System.getProperty("user.dir") + "/src/test/resources/XMLCompareFile2.xml");
 
-		BufferedReader source = new BufferedReader(new InputStreamReader(fis1));
-		BufferedReader target = new BufferedReader(new InputStreamReader(fis2));
-
-		XMLUnit.setIgnoreWhitespace(true);
-
-		List<Difference> differences = compareXML(source, target);
-
-		printDifferences(differences);
-	}
-
-	public static List compareXML(Reader source, Reader target) throws SAXException, IOException {
+	public static List<Difference> compareXML(Reader source, Reader target) throws SAXException, IOException {
 		Diff xmlDiff = new Diff(source, target);
 		DetailedDiff detailXmlDiff = new DetailedDiff(xmlDiff);
 		return detailXmlDiff.getAllDifferences();

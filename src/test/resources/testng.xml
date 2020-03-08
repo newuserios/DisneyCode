@@ -2,27 +2,12 @@
 <suite name="Suite-3" verbose="1">
   	<parameter name="title" value="SHOP"/>
   	<parameter name="Browser" value="FireFox"/>
+  	<parameter name="xmlFile1" value="XMLCompareFile1.xml"/>
+  	<parameter name="xmlFile2" value="XMLCompareFile2.xml"/>	 
  	<test name="Test">
- 	
- 	
  	<packages>
 			<package name=".*" />
 		</packages>
  	
 	</test>
 </suite>
- 
- 
- <!--  <packages>
-            <package name="com.disney.*"/>
-        </packages> -->
-        
- <!-- <classes>
-
-<class name="com.disney.coding.Browser" />
-  
-
-</classes>  --> 
- 	<!-- <packages>
-			<package name=".*" />
-		</packages> -->
